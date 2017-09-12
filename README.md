@@ -1,8 +1,6 @@
 # Lab 1 
 
 ###### Frank Dozen || Kurt Daill
-
-----
 ----
 ## Objectives
 * Create software to hand the classic 'Fizzbuzz' problem
