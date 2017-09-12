@@ -1,3 +1,5 @@
+import java.awt.*;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -21,6 +23,7 @@ public class lab1 {
                     continue;
                 }else{
                     nArr[i-1] = "fizz";
+
                     continue;
                 }
             }
@@ -31,5 +34,6 @@ public class lab1 {
             nArr[i-1] = Integer.toString(i);
         }
         return nArr;
+
     }
 }
