@@ -11,28 +11,29 @@ public class lab1 {
         if (n < 0) {
             n = 0;
         }
-        ArrayList<String> StrArr = fizzBuzz(n);
+        String StrArr[] = fizzBuzz(n);
 //        System.out.println(Arrays.toString(StrArr));
     }
-    public static ArrayList<String> fizzBuzz(int n){
-        ArrayList<String> mylist = new ArrayList(n);
+    public static String[] fizzBuzz(int n){
+        String nArr[] = new String[n];
         for(int i = 1; i <= n; i++){
             if(i % 3 == 0){
                 if(i % 5 == 0){
-                    mylist.add ("fizz buzz");
-                    continue;/Users/franklinwisseh1/Documents/GitHub/lab1-frank-kurt/step345/src/main/java/lab1.java
+                    nArr[i-1] = "fizz buzz";
+                    continue;
                 }else{
-                    mylist.add("fizz");
+                    nArr[i-1] = "fizz";
+
                     continue;
                 }
             }
             if(i % 5 == 0){
-                mylist.add("buzz");
+                nArr[i-1] = "buzz";
                 continue;
             }
-            String a = Integer.toString(i);
-            mylist.add(a);
+            nArr[i-1] = Integer.toString(i);
         }
-        return mylist;
+        return nArr;
+
     }
 }
